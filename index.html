@@ -13,8 +13,6 @@
       color: #fff;
       scroll-behavior: smooth;
     }
-
-    /* Navbar */
     nav {
       padding: 20px 80px;
       display: flex;
@@ -45,8 +43,6 @@
     nav ul li a:hover {
       color: #21d4fd;
     }
-
-    /* Hero Section */
     .hero {
       display: flex;
       justify-content: space-between;
@@ -97,8 +93,6 @@
       background-color: #f0f3c5;
       color: #0a0f1c;
     }
-
-    /* Hero Image */
     .hero-image {
       width: 350px;
       height: 350px;
@@ -112,8 +106,6 @@
       height: 100%;
       object-fit: cover;
     }
-
-    /* Sections */
     section {
       padding: 80px;
     }
@@ -122,8 +114,6 @@
       margin-bottom: 40px;
       color: #866bb8;
     }
-
-    /* About */
     #about {
       background-color: #111828;
     }
@@ -141,8 +131,9 @@
       color: #7be0f7;
       margin-bottom: 15px;
     }
-
-    /* Projects */
+    .about-box p {
+      color: #ccc;
+    }
     #projects {
       background-color: #0f172a;
     }
@@ -155,7 +146,13 @@
     .project-card h3 {
       color: #359267;
     }
-
+    #contact {
+      background-color: #111828;
+      text-align: center;
+    }
+    #contact p, #contact a {
+      color: #bbb;
+    }
     @media(max-width: 992px) {
       .hero {
         flex-direction: column-reverse;
@@ -168,8 +165,6 @@
   </style>
 </head>
 <body>
-
-  <!-- Navbar -->
   <nav>
     <div class="logo">JAYASRI THAVAMANI</div>
     <ul>
@@ -180,17 +175,14 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
       <h1>Hi, I'm <span>Jayasri</span>!</h1>
       <h1>Creative <span>Developer</span></h1>
-      <p>
-        Passionate about technology and coding, I dedicate myself to creating projects that make life safer and easier. Currently studying at Vellore Institute of Technology, proud to represent Krishnagiri.
-      </p>
+      <p>Committed IT student at VIT, passionate about leveraging technology to solve real-world problems. Skilled in programming, web development, and machine learning with hands-on experience in impactful projects.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn-primary-custom">Download CV</a>
-        <a href="#" class="btn-outline-custom">Watch The Video</a>
+        <a href="Jayasriiiiiiiiii.pdf" class="btn-primary-custom" download>Download CV</a>
+        <a href="#projects" class="btn-outline-custom">Explore Projects</a>
       </div>
     </div>
     <div class="hero-image">
@@ -198,60 +190,70 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <div class="about-content">
       <div class="about-box">
-        <h3>Short Bio</h3>
-        <p>I am a tech enthusiast and creative developer with a passion for building innovative projects that enhance safety and everyday life. My journey in coding began out of curiosity and has grown into a full-fledged career aspiration.</p>
-      </div>
-      <div class="about-box">
-        <h3>Skills & Expertise</h3>
-        <ul>
-          <li>Web Development (HTML, CSS, JavaScript, Bootstrap)</li>
-          <li>Java Programming</li>
-          <li>UI/UX Design Principles</li>
-          <li>Problem Solving</li>
-        </ul>
-      </div>
-      <div class="about-box">
         <h3>Education</h3>
-        <p>B.Tech in Information Technology, Vellore Institute of Technology</p>
+        <p><b>B.Tech in Information Technology</b>, VIT Vellore (2022–2026) | CGPA: 8.22</p>
+        <p>Currently pursuing undergraduate studies in IT, focusing on programming, database management, and cloud computing with strong academic performance.</p>
+        <p><b>HSC:</b> 90.83% (2021) – Govt. Girls Higher Secondary School, Mathur</p>
+        <p><b>SSLC:</b> 93.8% (2020) – Govt. Girls Higher Secondary School, Mathur</p>
       </div>
       <div class="about-box">
-        <h3>Experience</h3>
-        <p>Worked on academic and personal projects including Women Safety Alert System, portfolio websites, and IoT-based safety devices.</p>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Programming: C, Java, Python, MySQL</li>
+          <li>Web Development: HTML, CSS, JavaScript, Bootstrap</li>
+          <li>Backend & Database: Node.js, Express.js, MongoDB</li>
+          <li>Concepts: CN, OS, DBMS, Cloud, ML</li>
+        </ul>
+        <p>I have built full-stack projects and applied these skills in solving real-world problems using a combination of backend and frontend technologies.</p>
       </div>
       <div class="about-box">
-        <h3>Mission & Values</h3>
-        <p>My mission is to leverage technology for social good, ensuring that innovation is always aimed at improving lives and creating safer environments.</p>
+        <h3>Problem-Solving</h3>
+        <p>Solved <b>50+ problems on CodeChef</b> (Java focus), <b>100+ challenges on HackerRank</b>, and <b>150+ problems on LeetCode</b>, improving analytical and algorithmic thinking.</p>
       </div>
       <div class="about-box">
-        <h3>Personal Touch</h3>
-        <p>Beyond coding, I enjoy photography, exploring nature, and learning about emerging tech trends. I believe creativity outside of work fuels my professional skills.</p>
+        <h3>Certifications</h3>
+        <p>Certified in <b>Java Full Stack Development</b> and <b>Artificial Intelligence</b>, enhancing practical knowledge in modern software development and AI applications.</p>
+      </div>
+      <div class="about-box">
+        <h3>Languages</h3>
+        <p>Fluent in <b>Tamil</b>, <b>Kannada</b>, and <b>English</b>, enabling effective communication in diverse environments.</p>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
-
     <div class="project-card">
-      <h3>1. Women Safety Alert System</h3>
-      <p>Developed a Women Safety Alert System that enables users to register trusted contacts, share live location during emergencies, 
-        and send instant alerts via WhatsApp/SMS. Built with HTML, CSS, Bootstrap, JavaScript, and MongoDB, integrating geolocation and police station locator for enhanced safety.</p>
-      <a href="login.html" class="btn-primary-custom">Go to Login Page</a>
+      <h3>Women Safety System</h3>
+      <p>Built a web application for emergency alerts with live location sharing, trusted contact management, and nearby police station detection. Focused on improving user safety and real-time communication.</p>
+      <a href="https://github.com/Jayasri123-ja/Women_safety_App/tree/main" class="btn-primary-custom">View Code</a>
     </div>
-
     <div class="project-card">
-      <h3>2. [Your Second Project Name]</h3>
-      <p>Coming soon...</p>
+      <h3>Portfolio Website</h3>
+      <p>Designed and deployed a responsive personal portfolio website to showcase my skills, projects, and achievements. Fully functional and hosted on GitHub Pages.</p>
+      <a href="https://jayasri123-ja.github.io/Portfolio/" class="btn-outline-custom">Live Demo</a>
     </div>
-
+    <div class="project-card">
+      <h3>Heart Disease Prediction Using ML</h3>
+      <p>Developed a machine learning model using Logistic Regression, Random Forest, XGBoost, and SVM to predict heart disease with ~80% accuracy on the UCI dataset.</p>
+      <a href="https://github.com/Jayasri123-ja/Heart_Disease_Completely" class="btn-primary-custom">View Code</a>
+    </div>
   </section>
 
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📍 Krishnagiri, Tamil Nadu</p>
+    <p>📧 <a href="mailto:jayasri07th@gmail.com">jayasri07th@gmail.com</a></p>
+    <p>📞 +91 6382580628</p>
+    <p>
+      <a href="https://www.linkedin.com/in/jayasri-t-374641321">LinkedIn</a> | 
+      <a href="https://github.com/Jayasri123-ja">GitHub</a> | 
+      <a href="https://leetcode.com/">LeetCode</a>
+    </p>
+  </section>
 </body>
 </html>
-
